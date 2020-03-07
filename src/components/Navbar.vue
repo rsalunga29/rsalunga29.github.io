@@ -12,11 +12,11 @@
   @apply flex items-start justify-end pt-8 pr-8;
 }
 
-.nav a {
-  @apply px-10 font-extrabold;
+.nav > a {
+  @apply mx-10 font-extrabold;
 }
 
-.nav a.router-link-exact-active {
-  color: #42b983;
+.nav > a.router-link-exact-active {
+  border-bottom: 2px solid #ffffff;
 }
 </style>
