@@ -22,7 +22,7 @@
     background: url('../assets/dev1.svg'), url('../assets/dev.svg');
     background-repeat: no-repeat, no-repeat;
     background-size: 80%, 100%;
-    background-position: top 2rem left -10rem, bottom 5rem right -8rem;
+    background-position: top 2rem left -8rem, bottom 5rem right -8rem;
   }
 }
 </style>
