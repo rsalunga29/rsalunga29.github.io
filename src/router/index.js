@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '@/pages/Home'
 import About from '@/pages/About'
 import Articles from '@/pages/Articles'
-// import VueGtag from 'vue-gtag'
+import VueGtag from 'vue-gtag'
 
 Vue.use(VueRouter)
 
@@ -27,9 +27,9 @@ const routes = [
   }
 ]
 
-// Vue.use(VueGtag, {
-//   config: { id: 'UA-159906832-1' }
-// }, router)
+Vue.use(VueGtag, {
+  config: { id: 'UA-159906832-1' }
+}, router)
 
 const router = new VueRouter({
   mode: 'history',
