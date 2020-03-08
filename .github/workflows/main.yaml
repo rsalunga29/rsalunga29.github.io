@@ -14,12 +14,12 @@ jobs:
 
       - name: Lint
         run: |
-        npm run lint
+          npm run lint
 
       - name: Build
         run: |
-        npm install
-        npm run build
+          npm install
+          npm run build
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@3.4.1
