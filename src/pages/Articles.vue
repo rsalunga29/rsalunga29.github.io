@@ -1,6 +1,6 @@
 <template>
   <div class="articles flex">
-    <div class="w-1/1 max-w-lg mx-auto h-full pt-16">
+    <div class="w-1/1 max-w-lg mx-auto h-full pt-16 px-3 md:px-0">
       <p class="text-lg">
         I also write tech-related articles in my spare time. However this is not a frequent activity,
         I only write whenever I have a topic in mind I want to share, although hopefully someday I'll be
@@ -68,5 +68,12 @@ export default {
   background-repeat: no-repeat /*, no-repeat*/;
   background-size: 50% /*, 55%*/;
   background-position: top 2rem left -5rem /*, bottom 2rem right -23rem*/;
+}
+
+@media only screen and (max-width: 768px) {
+  .articles {
+    @apply h-auto;
+    background: none;
+  }
 }
 </style>

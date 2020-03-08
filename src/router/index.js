@@ -1,9 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import VueGtag from 'vue-gtag'
 import Home from '@/pages/Home'
 import About from '@/pages/About'
 import Articles from '@/pages/Articles'
-import VueGtag from 'vue-gtag'
+import NotFound from '@/pages/NotFound'
 
 Vue.use(VueRouter)
 
@@ -24,17 +25,22 @@ const routes = [
     path: '/articles',
     name: 'Articles',
     component: Articles,
-  }
-]
+  },
 
-Vue.use(VueGtag, {
-  config: { id: 'UA-159906832-1' }
-}, router)
+  {
+    path: '*',
+    component: NotFound,
+  },
+]
 
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes
 })
+
+Vue.use(VueGtag, {
+  config: { id: 'UA-159906832-1' }
+}, router)
 
 export default router

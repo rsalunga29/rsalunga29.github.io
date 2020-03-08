@@ -1,7 +1,7 @@
 <template>
   <div class="about pt-16">
-    <div class="flex justify-end text-lg">
-      <div class="w-2/4 whitespace-pre-line pr-3">
+    <div class="flex md:justify-end text-lg">
+      <div class="w-1/1 md:w-2/4 whitespace-pre-line pb-8 px-3 md:pl-0 md:pr-3">
         <p>
           Hi, I'm Akio, software engineer and tech lead based in Pampanga, Philippines. I have more than 4 years of
           relevant experience in defining requirements, designing, delivering, and maintaining complex web applications.
@@ -73,6 +73,13 @@ p > a.social-links > i {
   height: calc(100% - 4rem);
   background: url('../assets/dev1.svg') no-repeat;
   background-size: 80%;
-  background-position: top 2rem left -20rem;
+  background-position: top 2rem left -18rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .about {
+    @apply h-auto;
+    background: none;
+  }
 }
 </style>
