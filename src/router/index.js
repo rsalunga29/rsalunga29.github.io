@@ -24,17 +24,24 @@ const routes = [
     path: '/articles',
     name: 'Articles',
     component: Articles,
-  }
-]
+  },
 
-Vue.use(VueGtag, {
-  config: { id: 'UA-159906832-1' }
-}, router)
+  {
+    path: '*',
+    redirect: {
+      name: 'Home',
+    },
+  },
+]
 
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes
 })
+
+Vue.use(VueGtag, {
+  config: { id: 'UA-159906832-1' }
+}, router)
 
 export default router
