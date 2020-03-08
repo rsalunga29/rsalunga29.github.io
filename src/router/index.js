@@ -28,9 +28,7 @@ const routes = [
 
   {
     path: '*',
-    redirect: {
-      name: 'Home',
-    },
+    redirect: '/',
   },
 ]
 
