@@ -19,9 +19,10 @@
 @media only screen and (max-width: 768px) {
   .intro {
     height: calc(100% - 4rem);
-    background: url('../assets/dev.svg') no-repeat;
-    background-size: 100%;
-    background-position: bottom 5rem right -8rem;
+    background: url('../assets/dev1.svg'), url('../assets/dev.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-size: 80%, 100%;
+    background-position: top 2rem left -10rem, bottom 5rem right -8rem;
   }
 }
 </style>
