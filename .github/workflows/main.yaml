@@ -18,8 +18,9 @@ jobs:
           npm run build
 
       - name: Copy index.html as 404.html
+        working_directory: ./public
         run: |
-          cp public/index.html public/404.html
+          cp index.html 404.html
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@3.4.1
