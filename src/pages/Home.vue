@@ -1,9 +1,10 @@
 <template>
-  <div class="intro pl-16 pt-56">
+  <div class="intro pl-6 md:pl-16 pt-32 md:pt-56">
     <p class="text-6xl font-black">
       Hey, I'm Akio
     </p>
-    <p class="text-3xl">Software engineer & tech lead</p>
+
+    <p class="text-4xl md:text-3xl">Software engineer & tech lead</p>
   </div>
 </template>
 
@@ -13,5 +14,14 @@
   background: url('../assets/dev.svg') no-repeat;
   background-size: 90%;
   background-position: top 5rem right -20rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .intro {
+    height: calc(100% - 4rem);
+    background: url('../assets/dev.svg') no-repeat;
+    background-size: 100%;
+    background-position: bottom 5rem right -8rem;
+  }
 }
 </style>
