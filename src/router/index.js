@@ -4,7 +4,6 @@ import VueGtag from 'vue-gtag'
 import Home from '@/pages/Home'
 import About from '@/pages/About'
 import Articles from '@/pages/Articles'
-import NotFound from '@/pages/NotFound'
 
 Vue.use(VueRouter)
 
@@ -25,11 +24,6 @@ const routes = [
     path: '/articles',
     name: 'Articles',
     component: Articles,
-  },
-
-  {
-    path: '*',
-    component: NotFound,
   },
 ]
 

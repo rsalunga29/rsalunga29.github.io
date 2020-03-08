@@ -63,7 +63,7 @@ export default {
 
 <style>
 .articles {
-  @apply h-auto;
+  @apply h-full;
   background: url('../assets/dev2.svg') /*, url('../assets/dev3.svg')*/;
   background-repeat: no-repeat /*, no-repeat*/;
   background-size: 50% /*, 55%*/;
@@ -72,7 +72,7 @@ export default {
 
 @media only screen and (max-width: 768px) {
   .articles {
-    @apply h-auto;
+    @apply h-full;
     background: none;
   }
 }
