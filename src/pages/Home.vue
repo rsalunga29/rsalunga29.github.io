@@ -4,7 +4,7 @@
       Hey, I'm Akio
     </p>
 
-    <p class="text-4xl md:text-3xl">Software engineer & tech lead</p>
+    <p class="text-4xl md:text-3xl">Software engineer & tech lead1</p>
   </div>
 </template>
 
