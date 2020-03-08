@@ -3,7 +3,7 @@
    <div v-for="article in this.articles" :key="article.id">
      <div class="max-w-lg rounded overflow-hidden shadow-lg mb-6">
         <a :href="article.url" target="_blank" rel="noopener noreferrer">
-          <img class="w-full" :src="article.cover_image" loading="lazy">
+          <img class="w-full" :src="article.cover_image" :alt="article.title" loading="lazy">
         </a>
 
         <div class="bg-white">
