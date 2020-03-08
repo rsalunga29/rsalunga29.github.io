@@ -18,7 +18,7 @@ jobs:
           npm run build
 
       - name: Copy index.html as 404.html
-        working_directory: ./public
+        working-directory: ./public
         run: |
           cp index.html 404.html
 
